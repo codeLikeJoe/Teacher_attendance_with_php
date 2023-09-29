@@ -35,11 +35,11 @@
                          <?= form_open_multipart('attendance') ?>
                          <div class="row mb-3">
                            <div class="col-lg-5">
-                             <label for="work_shift" class="col-form-label">Work Shift</label>
+                             <label for="work_shift" class="col-form-label">Number of work-time</label>
                              <input class="form-control" type="text" placeholder="<?= $account['shift']; ?>" value="<?= $account['shift']; ?>" name="work_shift" readonly>
                            </div>
                            <div class="col-lg-5 offset-lg-1">
-                             <label for="location" class="col-form-label">Check In Location</label>
+                             <label for="location" class="col-form-label">Where Are You Checking In From?</label>
                              <select class="form-control" name="location" id="location">
                                <?php foreach ($location as $lct) : ?>
                                  <option value="<?= $lct['id'] ?>"><?= $lct['id']; ?> = <?= $lct['name'] ?></option>
@@ -65,7 +65,7 @@
                              </script>
                            </div> -->
                            <div class="col-lg-5 offset-lg-1 text-center">
-                             <label for="notes" class="float-left">Notes</label>
+                             <label for="notes" class="float-left">Make Sure To Leave A Note</label>
                              <textarea maxlength="120" class="form-control mb-4" name="notes" id="notes" rows="3" style="resize: none;"></textarea>
                              <hr>
                              <button type="submit" class="btn btn-info btn-circle" style="font-size: 20px; width: 100px; height: 100px">
